@@ -41,12 +41,13 @@ totalAmount (40, "fair")
 function splitAmount(amount, rating, population){
 
     if (rating === "good") {
-        console.log(((amount * .2) + amount) / population);
+        console.log((((amount * .2) + amount) / population).toFixed(2));
     } else if (rating === "fair") {
-        console.log(((amount *.15) + amount) / population);
+        console.log((((amount *.15) + amount) / population).toFixed(2));
     } else {
-        console.log(((amount * .1) + amount) / population);
+        console.log((((amount * .1) + amount) / population).toFixed(2));
     }
 }
 splitAmount (100, "good", 5)
 splitAmount (40, "fair", 2)
+splitAmount (50, "bad", 3)
