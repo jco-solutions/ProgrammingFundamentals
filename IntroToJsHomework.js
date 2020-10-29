@@ -39,6 +39,7 @@ totalAmount (100, "good")
 totalAmount (40, "fair")
 
 function splitAmount(amount, rating, population){
+
     if (rating === "good") {
         console.log(((amount * .2) + amount) / population);
     } else if (rating === "fair") {
