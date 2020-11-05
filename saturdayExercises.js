@@ -83,3 +83,25 @@ function printBanner(str){
 }
 
 console.log(printBanner("Welcome to DigitalCrafts"))
+
+var factors = (num) => {
+  let fac = [], i = 1, ind = 0;
+  
+  while (i <= Math.floor(Math.sqrt(num))) {
+    if (num%i === 0) {
+      fac.splice(ind,0,i);
+      if (i != num/i) {
+        fac.splice(-ind,0,num/i);
+      }
+      ind++;
+    }
+    i++;
+  }
+  
+  let temp = fac[fac.length - 1];
+  fac[fac.length - 1] = fac[0];
+  fac[0] = temp;
+  
+  return fac;
+  };
+  console.log(factors(100));
