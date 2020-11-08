@@ -92,7 +92,7 @@ function factors(num) {
   console.log(factors)
 }
 
-factors(6);
+factors(124);
 
 function cipher(sentence, offset) {
   let codedSentence = ""
@@ -126,3 +126,15 @@ function cipher(sentence, offset) {
 cipher("I have a dog", 5)
 
 cipher("N mfbj f itl", -5)
+
+function positiveNumbers(startingArray) {
+  let newArray = [];
+  for (let q = 0; q <= startingArray.length; q++) {
+    if (startingArray[q] > 0) {
+      newArray.push(startingArray[q]);
+    }
+  }
+  console.log(newArray);
+}
+
+positiveNumbers([-8, 6, -9, 7, -15, -19, 20]);
