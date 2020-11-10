@@ -137,4 +137,16 @@ function positiveNumbers(startingArray) {
   console.log(newArray);
 }
 
-positiveNumbers([-8, 6, -9, 7, -15, -19, 20]);
+positiveNumbers([-8, 6, -9, 7, -15, -19, 20, 30, 145]);
+
+
+let numstoSum = [25, 62, 2, 6]
+function sumNumbers(testArr) {
+  let sum = 0;
+  for (let m = 0; m < testArr.length; m++) {
+    sum += numstoSum[m];
+  }
+  console.log(sum);
+}
+
+sumNumbers(numstoSum);
